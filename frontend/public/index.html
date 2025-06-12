@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrintXcelerate | Premium Print Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">PrintXcelerate</h1>
+      <nav>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#features" class="nav-link">Why Us</a>
+        <a href="#newsletter" class="nav-link">Newsletter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-container">
+        <h2>Transform Your Prints with Speed & Style</h2>
+        <p>Premium-quality prints delivered fast, with unmatched service.</p>
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="products" id="products" aria-label="Featured products">
+      <div class="container">
+        <h3>Featured Products</h3>
+        <div class="product-grid">
+          <article class="product-card" tabindex="0">
+            <img src="images/watch1.avif" alt="Smart Watch Charger Case" />
+            <h4>Smart Watch Charger Case</h4>
+            <p class="price">€2.99</p>
+            <button class="btn btn-secondary" onclick="addToCart('Smart Watch Charger Case')">Shop Now</button>
+          </article>
+
+          <article class="product-card" tabindex="0">
+            <img src="images/aa_box.jpg" alt="Sticker Pack" />
+            <h4>AA Batteries Box</h4>
+            <p class="price">€4.44</p>
+            <button class="btn btn-secondary" onclick="addToCart('Sticker Pack')">Shop Now</button>
+          </article>
+
+          <article class="product-card" tabindex="0">
+            <img src="./images/card-holder.avif" alt="Mug Print" />
+            <h4>Business Card Holder</h4>
+            <p class="price">€3.99</p>
+            <button class="btn btn-secondary" onclick="">Shop Now</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features" aria-label="Why choose us">
+      <div class="container">
+        <h3>Why Choose Us</h3>
+        <div class="features-grid">
+          <div class="feature" tabindex="0">
+            <span class="feature-icon" aria-hidden="true">🚀</span>
+            <h4>Fast Shipping</h4>
+            <p>Get your orders delivered within 2–3 business days.</p>
+          </div>
+
+          <div class="feature" tabindex="0">
+            <span class="feature-icon" aria-hidden="true">🔒</span>
+            <h4>Secure Checkout</h4>
+            <p>Your payment and data are fully encrypted and safe.</p>
+          </div>
+
+          <div class="feature" tabindex="0">
+            <span class="feature-icon" aria-hidden="true">💬</span>
+            <h4>24/7 Support</h4>
+            <p>We’re always here to help — anytime you need us.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter" aria-label="Newsletter subscription">
+      <div class="container newsletter-container">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form onsubmit="subscribe(event)" novalidate>
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" id="email" placeholder="Enter your email" required aria-required="true" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" role="alert" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>© 2025 PrintXcelerate. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
